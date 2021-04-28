@@ -14,11 +14,11 @@ class MainFrame(tk.Frame):
         self.numberDisplay.grid(row=0, column=0, sticky='EW', padx=10, pady=10, columnspan=5)
 
         # Backspace and clear buttons
-        buttonCE = tk.Button(self, text='CE', font=('Helvetica', 16), bg='#6f90a8', anchor=tk.CENTER, command=self.pressCE)
+        buttonCE = tk.Button(self, text='CE', font=('Helvetica', 16), bg='#ecac4c', anchor=tk.CENTER, command=self.pressCE)
         buttonCE.grid(row=1, column=0, padx=10, pady=10, sticky='EW')
-        buttonC = tk.Button(self, text='C', font=('Helvetica', 16), bg='#6f90a8', anchor=tk.CENTER, command=self.pressC)
+        buttonC = tk.Button(self, text='C', font=('Helvetica', 16), bg='#ecac4c', anchor=tk.CENTER, command=self.pressC)
         buttonC.grid(row=1, column=1, padx=10, pady=10, sticky='EW')
-        backspace = tk.Button(self, text='←', font=('Helvetica', 16), bg='#6f90a8', anchor=tk.CENTER, command=self.pressBackSpace)
+        backspace = tk.Button(self, text='←', font=('Helvetica', 16), bg='#ecac4c', anchor=tk.CENTER, command=self.pressBackSpace)
         backspace.grid(row=1, column=2, padx=10, pady=10, sticky='EW', columnspan=3)
 
         # Number buttons
@@ -48,21 +48,21 @@ class MainFrame(tk.Frame):
         decimalPoint.grid(row=5, column=2, padx=10, pady=10, sticky='EW')
 
         # Operators buttons
-        add = tk.Button(self, text='+', font=('Helvetica', 16), width=3, bg='#2c5778', anchor=tk.CENTER, command=self.pressAdd)
+        add = tk.Button(self, text='+', font=('Helvetica', 16), width=3, bg='#c1412e', anchor=tk.CENTER, command=self.pressAdd)
         add.grid(row=2, column=3, padx=10, pady=10, sticky='EW')
-        substract = tk.Button(self, text='-', font=('Helvetica', 16), width=3, bg='#2c5778', anchor=tk.CENTER, command=self.pressSubstract)
+        substract = tk.Button(self, text='-', font=('Helvetica', 16), width=3, bg='#c1412e', anchor=tk.CENTER, command=self.pressSubstract)
         substract.grid(row=2, column=4, padx=10, pady=10, sticky='EW')
-        multiply = tk.Button(self, text='x', font=('Helvetica', 16), width=3, bg='#2c5778', anchor=tk.CENTER, command=self.pressMultiply)
+        multiply = tk.Button(self, text='x', font=('Helvetica', 16), width=3, bg='#c1412e', anchor=tk.CENTER, command=self.pressMultiply)
         multiply.grid(row=3, column=3, padx=10, pady=10, sticky='EW')
-        divide = tk.Button(self, text='÷', font=('Helvetica', 16), width=3, bg='#2c5778', anchor=tk.CENTER, command=self.pressDivide)
+        divide = tk.Button(self, text='÷', font=('Helvetica', 16), width=3, bg='#c1412e', anchor=tk.CENTER, command=self.pressDivide)
         divide.grid(row=3, column=4, padx=10, pady=10, sticky='EW')
-        modulus = tk.Button(self, text='%', font=('Helvetica', 16), width=3, bg='#2c5778', anchor=tk.CENTER, command=self.pressModulus)
+        modulus = tk.Button(self, text='%', font=('Helvetica', 16), width=3, bg='#c1412e', anchor=tk.CENTER, command=self.pressModulus)
         modulus.grid(row=4, column=3, padx=10, pady=10, sticky='EW')
-        power = tk.Button(self, text='x\u207F', font=('Helvetica', 16), width=3, bg='#2c5778', anchor=tk.CENTER, command=self.pressPower)
+        power = tk.Button(self, text='x\u207F', font=('Helvetica', 16), width=3, bg='#c1412e', anchor=tk.CENTER, command=self.pressPower)
         power.grid(row=4, column=4, padx=10, pady=10, sticky='EW')
-        sqrt = tk.Button(self, text='\u221Ax', font=('Helvetica', 16), width=3, bg='#2c5778', anchor=tk.CENTER, command=self.pressSqrt)
+        sqrt = tk.Button(self, text='\u221Ax', font=('Helvetica', 16), width=3, bg='#c1412e', anchor=tk.CENTER, command=self.pressSqrt)
         sqrt.grid(row=5, column=4, padx=10, pady=10, sticky='EW')
-        equal = tk.Button(self, text='=', font=('Helvetica', 16), width=3, bg='#018cab', anchor=tk.CENTER, command=self.pressEqual)
+        equal = tk.Button(self, text='=', font=('Helvetica', 16), width=3, bg='#603632', anchor=tk.CENTER, command=self.pressEqual)
         equal.grid(row=5, column=3, padx=10, pady=10, sticky='EW')
 
         # Column and row spaces
