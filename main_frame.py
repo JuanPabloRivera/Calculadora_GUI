@@ -173,7 +173,10 @@ class MainFrame(tk.Frame):
         self.op = '**'
 
     def pressSqrt(self):
-        self.ans = "{:.2f}".format(float(self.ans) ** (0.5))
+        if self.hasAns:
+            self.ans = "{:.2f}".format(float(self.ans) ** (0.5))
+        else: 
+            self.ans = "{:.2f}".format(float(self.currentNumber) ** (0.5))
         self.hasAns = True
         self.currentNumber = ''
         self.numberDisplay['text'] = self.ans
